@@ -1,0 +1,16 @@
+### Create Akun
+POST http://localhost:3000/api/v1/register
+
+{
+    "name": "mahzumy",
+    "email": "me@mahzumy.com",
+    "password": "654321"
+}
+
+### login
+POST http://localhost:3000/api/v1/login
+
+{
+    "email": "me@mahzumy.com",
+    "password": "654321"
+}
