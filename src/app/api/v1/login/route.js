@@ -30,7 +30,6 @@ export async function POST(req){
         }
        
         const token = sign(payLoad, process.env.SECRET_KEY, {expiresIn: "1d"});
-        //console.log(token);
 
         return NextResponse.json({token, data:payLoad, message:"User Login Succesfully"},{status:201})
     } catch (error) {
